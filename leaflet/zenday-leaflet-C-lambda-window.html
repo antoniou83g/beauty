@@ -128,20 +128,45 @@
   .qr{background:var(--cream);border-radius:3.4mm;padding:3.2mm 3.2mm 2.4mm;text-align:center}
   .qr img{display:block;width:100%;height:auto}
   .qr span{display:block;margin-top:2mm;font:800 5.6pt/1 Manrope,sans-serif;letter-spacing:.22em;color:var(--brick)}
+
+  /* ── photo-cover variants ── */
+  .photo{position:absolute;left:0;top:0;width:154mm;overflow:hidden}
+  .photo img{display:block;width:100%;height:100%;object-fit:cover}
+  .photo .tone{position:absolute;inset:0;background:#972010;mix-blend-mode:soft-light;opacity:.55}
+  .photo .fade{position:absolute;inset:0}
+  .front .demand p{max-width:none}
+  .va,.vb,.vc,.vd{background:radial-gradient(110mm 80mm at 12% 100%, rgba(151,32,16,.4), transparent 70%),#491009}
+
+  .vc .win{position:absolute;inset:0;width:100%;height:100%}
+  .vc .seal{left:100mm;top:13mm;width:28mm;height:28mm}
+  .vc .hero{top:50mm}
+  .vc h1{font-size:36pt;line-height:1}
+  .vc .sub{position:absolute;top:65mm;left:0;max-width:112mm;margin:0}
+  .vc .demand{top:129mm}
+  .vc .demand h2{font-size:16pt}
+  .vc .notif.n1{top:143mm}.vc .notif.n2{top:161mm}.vc .notif.n3{top:179mm}
 </style>
 </head>
 <body>
 
-<!-- ════════════════════════ FRONT ════════════════════════ -->
-<section class="page front" aria-label="Μπροστινή όψη">
-  <!-- The Λ of the wordmark, drawn as a roof: the professional walks into the client's home -->
-  <svg class="roof" viewBox="0 0 154 216" preserveAspectRatio="none" aria-hidden="true">
+<!-- ════════════════════════ FRONT · C · Λ WINDOW ════════════════════════ -->
+<section class="page front vc" aria-label="Μπροστινή όψη">
+  <!-- the hairdresser seen through the Λ: the roof of the client's home -->
+  <svg class="win" viewBox="0 0 154 216" aria-hidden="true">
+    <defs>
+      <clipPath id="lam"><path d="M114 27 L68 112 L160 112 Z"/></clipPath>
+      <linearGradient id="lamfade" x1="0" y1="0" x2="0" y2="1"><stop offset=".55" stop-color="#491009" stop-opacity="0"/><stop offset="1" stop-color="#491009" stop-opacity=".55"/></linearGradient>
+    </defs>
+    <g clip-path="url(#lam)">
+      <image href="img/hairdresser.jpg" x="-40" y="22" width="235" height="157" preserveAspectRatio="xMidYMid slice"/>
+      <rect x="0" y="27" width="160" height="86" fill="#972010" opacity=".18" style="mix-blend-mode:soft-light"/>
+      <rect x="60" y="27" width="100" height="86" fill="url(#lamfade)"/>
+    </g>
     <g fill="none" stroke="#C6A664" stroke-linecap="round">
-      <path d="M74 216 L114 44 L170 216" stroke-width=".35" opacity=".9"/>
-      <path d="M84 216 L114 56 L160 216" stroke-width=".18" opacity=".45"/>
+      <path d="M68 112 L114 27 L160 112" stroke-width=".45"/>
     </g>
   </svg>
-  <!-- Seal at the apex of the roof: the "first in Greece" claim -->
+    <!-- Seal at the apex of the roof: the "first in Greece" claim -->
   <svg class="seal" viewBox="0 0 30 30" aria-label="Η πρώτη στην Ελλάδα για ραντεβού κατ’ οίκον">
     <defs><path id="ring" d="M15 15 m-11.4 0 a11.4 11.4 0 1 1 22.8 0 a11.4 11.4 0 1 1 -22.8 0"/></defs>
     <circle cx="15" cy="15" r="14.6" fill="#491009"/>
@@ -150,18 +175,15 @@
     <text font-family="Manrope" font-weight="800" font-size="2.05" letter-spacing=".42" fill="#C6A664"><textPath href="#ring" textLength="70.6" lengthAdjust="spacing">Η ΠΡΩΤΗ ΣΤΗΝ ΕΛΛΑΔΑ ◆ ΚΑΤ’ ΟΙΚΟΝ ◆ ΓΙΑ ΕΠΑΓΓΕΛΜΑΤΙΕΣ ◆</textPath></text>
     <text x="15" y="19.4" text-anchor="middle" font-family="Zenday Wordmark" font-size="12" fill="#F7ECE4">A</text>
   </svg>
-
   <div class="logo wm">Zenday</div>
-
   <div class="hero">
     <p class="kicker eyebrow">Hair stylists · Μασέρ · Αισθητικοί<br>Nail &amp; make-up artists</p>
-    <h1>Εσείς είστε<br><em>το σαλόνι.</em></h1>
+    <h1>Εσείς<br>είστε το<br><em>σαλόνι.</em></h1>
     <p class="sub"><b>Η πρώτη πλατφόρμα online κρατήσεων στην Ελλάδα για περιποιήσεις κατ’&nbsp;οίκον</b> — φτιαγμένη αποκλειστικά για επαγγελματίες.</p>
   </div>
-
   <div class="demand">
     <h2>Σας ψάχνουν <em>ήδη.</em></h2>
-    <p>Πελάτες που θέλουν την περιποίηση στον δικό τους χώρο, στη δική τους ώρα — και πληρώνουν πριν φτάσετε.</p>
+    <p>Στον δικό τους χώρο, στη δική τους ώρα — και πληρωμένοι πριν φτάσετε.</p>
   </div>
 
   <div class="notif n1">

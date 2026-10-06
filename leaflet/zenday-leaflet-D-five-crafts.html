@@ -128,20 +128,36 @@
   .qr{background:var(--cream);border-radius:3.4mm;padding:3.2mm 3.2mm 2.4mm;text-align:center}
   .qr img{display:block;width:100%;height:auto}
   .qr span{display:block;margin-top:2mm;font:800 5.6pt/1 Manrope,sans-serif;letter-spacing:.22em;color:var(--brick)}
+
+  /* ── photo-cover variants ── */
+  .photo{position:absolute;left:0;top:0;width:154mm;overflow:hidden}
+  .photo img{display:block;width:100%;height:100%;object-fit:cover}
+  .photo .tone{position:absolute;inset:0;background:#972010;mix-blend-mode:soft-light;opacity:.55}
+  .photo .fade{position:absolute;inset:0}
+  .front .demand p{max-width:none}
+  .va,.vb,.vc,.vd{background:radial-gradient(110mm 80mm at 12% 100%, rgba(151,32,16,.4), transparent 70%),#491009}
+
+  .vd .strip{position:absolute;left:0;top:0;width:154mm;height:72mm;display:grid;grid-template-columns:repeat(5,1fr);gap:.7mm;background:#491009}
+  .vd .s{position:relative;margin:0;overflow:hidden}
+  .vd .s img{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--x) 50%;filter:saturate(.9)}
+  .vd .s::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(73,16,9,.6) 0,rgba(73,16,9,0) 16mm,rgba(73,16,9,0) 40mm,rgba(73,16,9,.95) 72mm)}
+  .vd .s figcaption{position:absolute;left:0;right:0;top:7mm;z-index:1;text-align:center;font:800 5.2pt/1 Manrope,sans-serif;letter-spacing:.2em;color:#F7ECE4}
+  .vd .seal{left:113mm;top:57mm;width:28mm;height:28mm;filter:drop-shadow(0 1mm 3mm rgba(20,4,2,.5))}
+  .vd .hero{top:76mm}
+  .vd .logo{top:61mm;font-size:13pt}
+  .vd h1{font-size:36pt}
+  .vd .sub{max-width:96mm;margin-top:4mm}
+  .vd .demand{top:124mm}
+  .vd .demand h2{font-size:16pt}
+  .vd .notif.n1{top:139mm}.vd .notif.n2{top:157mm}.vd .notif.n3{top:175mm}
 </style>
 </head>
 <body>
 
-<!-- ════════════════════════ FRONT ════════════════════════ -->
-<section class="page front" aria-label="Μπροστινή όψη">
-  <!-- The Λ of the wordmark, drawn as a roof: the professional walks into the client's home -->
-  <svg class="roof" viewBox="0 0 154 216" preserveAspectRatio="none" aria-hidden="true">
-    <g fill="none" stroke="#C6A664" stroke-linecap="round">
-      <path d="M74 216 L114 44 L170 216" stroke-width=".35" opacity=".9"/>
-      <path d="M84 216 L114 56 L160 216" stroke-width=".18" opacity=".45"/>
-    </g>
-  </svg>
-  <!-- Seal at the apex of the roof: the "first in Greece" claim -->
+<!-- ════════════════════════ FRONT · D · FIVE CRAFTS ════════════════════════ -->
+<section class="page front vd" aria-label="Μπροστινή όψη">
+  <div class="strip"><figure class="s" style="--x:58%"><img src="img/hair.jpg" alt=""><figcaption>HAIR</figcaption></figure><figure class="s" style="--x:72%"><img src="img/massage.jpg" alt=""><figcaption>ΜΑΣΑΖ</figcaption></figure><figure class="s" style="--x:55%"><img src="img/facial.jpg" alt=""><figcaption>ΑΙΣΘΗΤΙΚΗ</figcaption></figure><figure class="s" style="--x:30%"><img src="img/nails.jpg" alt=""><figcaption>NAILS</figcaption></figure><figure class="s" style="--x:22%"><img src="img/makeup.jpg" alt=""><figcaption>MAKE-UP</figcaption></figure></div>
+    <!-- Seal at the apex of the roof: the "first in Greece" claim -->
   <svg class="seal" viewBox="0 0 30 30" aria-label="Η πρώτη στην Ελλάδα για ραντεβού κατ’ οίκον">
     <defs><path id="ring" d="M15 15 m-11.4 0 a11.4 11.4 0 1 1 22.8 0 a11.4 11.4 0 1 1 -22.8 0"/></defs>
     <circle cx="15" cy="15" r="14.6" fill="#491009"/>
@@ -150,18 +166,14 @@
     <text font-family="Manrope" font-weight="800" font-size="2.05" letter-spacing=".42" fill="#C6A664"><textPath href="#ring" textLength="70.6" lengthAdjust="spacing">Η ΠΡΩΤΗ ΣΤΗΝ ΕΛΛΑΔΑ ◆ ΚΑΤ’ ΟΙΚΟΝ ◆ ΓΙΑ ΕΠΑΓΓΕΛΜΑΤΙΕΣ ◆</textPath></text>
     <text x="15" y="19.4" text-anchor="middle" font-family="Zenday Wordmark" font-size="12" fill="#F7ECE4">A</text>
   </svg>
-
   <div class="logo wm">Zenday</div>
-
   <div class="hero">
-    <p class="kicker eyebrow">Hair stylists · Μασέρ · Αισθητικοί<br>Nail &amp; make-up artists</p>
     <h1>Εσείς είστε<br><em>το σαλόνι.</em></h1>
     <p class="sub"><b>Η πρώτη πλατφόρμα online κρατήσεων στην Ελλάδα για περιποιήσεις κατ’&nbsp;οίκον</b> — φτιαγμένη αποκλειστικά για επαγγελματίες.</p>
   </div>
-
   <div class="demand">
     <h2>Σας ψάχνουν <em>ήδη.</em></h2>
-    <p>Πελάτες που θέλουν την περιποίηση στον δικό τους χώρο, στη δική τους ώρα — και πληρώνουν πριν φτάσετε.</p>
+    <p>Στον δικό τους χώρο, στη δική τους ώρα — και πληρωμένοι πριν φτάσετε.</p>
   </div>
 
   <div class="notif n1">

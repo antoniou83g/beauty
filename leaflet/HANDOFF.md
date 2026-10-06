@@ -14,6 +14,18 @@ The **Λ** of the Zenday wordmark is redrawn as a gold **roof** on the front: th
 
 Copy rules kept on purpose: no numbers, percentages or fees (those live in the contract). Competitors are never named — "the big platforms were made for salons".
 
+## Cover options with photography (`zenday-leaflet-A…D.html`, previews in `export/`, side by side in `export/cover-options-A-B-C-D.jpg`)
+The back is identical in all of them.
+- **A · Portrait:** the smiling hairdresser from zenday.gr, full bleed on the top half, toned warm and faded into oxblood; seal on the photo's lower edge.
+- **B · Briefcase:** layout ready, **photo slot** for a woman's hand holding her work case at the client's door (waist-down crop, warm daylight, hand on the right, door/threshold visible). Drop the photo in the slot (full bleed, 154 × 106 mm, ≥ 300 dpi ≈ 1820 × 1250 px) and remove the dashed frame.
+- **C · Λ window (recommended):** the hairdresser seen through the Λ of the logo — the roof of the client's home — outlined in gold, seal at the apex. Most ownable, most "brand".
+- **D · Five crafts:** five slices, one per specialty, taken from the zenday.gr homepage film; wordmark on the strip's fade.
+
+**Image sources & rights**
+- `img/hairdresser.jpg` — Unsplash photo `photo-1562322140-8baeececf3df` (already used on zenday.gr), Unsplash License: free for commercial use incl. print, no attribution required. Downloaded at 3000 px.
+- `img/hair|massage|facial|nails|makeup.jpg` — frames from `zenday.gr/…/mgo-hero-v1.mp4` (1440 × 1080). Fine for the narrow slices in D; for a larger use, get the original clip or stills.
+- Note: the hairdresser photo was shot in a salon. For a brand that says "you are the salon", a photo taken in a client's home is even stronger — worth one half-day shoot with a real Zenday pro (the briefcase shot for B, plus a smiling pro at a client's door).
+
 ## Colour (from zenday.gr)
 | Role | HEX | Suggested CMYK (check against your printer's profile) |
 |---|---|---|
