@@ -48,14 +48,15 @@
       radial-gradient(90mm 80mm at 10% 95%, rgba(151,32,16,.35), transparent 70%),
       var(--oxblood);color:var(--cream)}
   .front .roof{position:absolute;inset:0;width:100%;height:100%}
+  .front .seal{position:absolute;left:99mm;top:15mm;width:30mm;height:30mm}
   .front .top{position:absolute;top:13mm;left:13mm;right:13mm;display:flex;justify-content:space-between;align-items:center}
   .front .top .wm{font-size:15pt;color:var(--cream)}
   .front .top .kicker{color:var(--rose);font-size:6pt;text-align:right}
-  .front .hero{position:absolute;left:13mm;right:13mm;top:60mm}
+  .front .hero{position:absolute;left:13mm;right:13mm;top:58mm}
   .front .eyebrow{color:var(--gold);margin-bottom:5mm}
-  .front h1{font:400 44pt/.96 'Noto Serif Display',serif;letter-spacing:-.01em;color:var(--cream)}
+  .front h1{font:400 42pt/.96 'Noto Serif Display',serif;letter-spacing:-.01em;color:var(--cream)}
   .front h1 em{font-style:italic;font-weight:300;color:var(--rose)}
-  .front .sub{margin-top:6mm;max-width:74mm;font:500 10.2pt/1.45 Manrope,sans-serif;color:rgba(247,236,228,.86)}
+  .front .sub{margin-top:5.5mm;max-width:76mm;font:500 9.6pt/1.45 Manrope,sans-serif;color:rgba(247,236,228,.86)}
   .front .sub b{font-weight:800;color:var(--cream)}
 
   /* the "new booking" notification — the moment every pro wants */
@@ -71,12 +72,13 @@
     font:800 5.8pt/1 Manrope,sans-serif;letter-spacing:.16em;color:var(--brick)}
   .notif .paid svg{width:2.8mm;height:2.8mm}
 
-  .front .turn{position:absolute;left:13mm;bottom:21mm;font:400 italic 11pt/1.3 'Noto Serif Display',serif;color:rgba(247,236,228,.7)}
+  .front .turn{position:absolute;left:13mm;bottom:18.5mm;font:400 italic 13.5pt/1.2 'Noto Serif Display',serif;color:rgba(247,236,228,.78)}
   .front .turn b{font-style:normal;font-weight:400;color:var(--gold)}
-  .ticker{position:absolute;left:0;right:0;bottom:0;height:13mm;padding-bottom:var(--bleed);background:var(--blush);color:var(--oxblood);
-    display:flex;align-items:center;justify-content:center;gap:3mm;white-space:nowrap;
-    font:800 6pt/1 Manrope,sans-serif;letter-spacing:.2em}
-  .ticker i{font-style:normal;color:var(--brick);font-size:5pt}
+  /* the week strip: seven ordinary days … and Zenday */
+  .week{position:absolute;left:0;right:0;bottom:0;height:13mm;padding:0 13mm var(--bleed);background:var(--blush);color:rgba(73,16,9,.55);
+    display:flex;align-items:center;justify-content:space-between;white-space:nowrap;font:800 6.4pt/1 Manrope,sans-serif;letter-spacing:.2em}
+  .week .zen{padding:1.7mm 3mm 1.5mm;border-radius:99px;background:var(--oxblood);color:var(--cream);font:400 8pt/1 'Zenday Wordmark',serif;letter-spacing:0;
+    box-shadow:0 .8mm 2mm rgba(73,16,9,.35)}
 
   /* ───────────── BACK ───────────── */
   .back{background:var(--cream);color:var(--oxblood)}
@@ -88,26 +90,27 @@
   .back .manifesto{margin-top:3.6mm;max-width:118mm;font:500 8.6pt/1.5 Manrope,sans-serif;color:rgba(73,16,9,.8)}
   .back .manifesto b{font-weight:800;color:var(--oxblood)}
 
-  .grid{position:absolute;top:55mm;left:13mm;right:13mm;display:grid;grid-template-columns:1fr 1fr;column-gap:7mm;row-gap:4.6mm}
+  .grid{position:absolute;top:59mm;left:13mm;right:13mm;display:grid;grid-template-columns:1fr 1fr;column-gap:7mm;row-gap:4.6mm}
   .b{display:grid;grid-template-columns:9mm 1fr;column-gap:3mm;align-items:start}
   .b .ic{width:9mm;height:9mm;border-radius:50%;background:var(--blush);display:grid;place-items:center}
   .b .ic svg{width:4.8mm;height:4.8mm;stroke:var(--brick);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
   .b h3{font:500 10.4pt/1.12 'Noto Serif Display',serif;color:var(--oxblood)}
   .b p{margin-top:1.1mm;font:500 7.2pt/1.42 Manrope,sans-serif;color:rgba(73,16,9,.74)}
 
-  .help{position:absolute;top:119mm;left:13mm;right:13mm;display:flex;align-items:center;gap:3.4mm;padding:3.2mm 4mm;border:.3mm solid rgba(151,32,16,.35);border-radius:3mm}
+  .help{position:absolute;top:122mm;left:13mm;right:13mm;display:flex;align-items:center;gap:3.4mm;padding:3.2mm 4mm;border:.3mm solid rgba(151,32,16,.35);border-radius:3mm}
   .help svg{flex:none;width:6mm;height:6mm;stroke:var(--brick);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
   .help p{font:500 8pt/1.35 Manrope,sans-serif}
   .help b{font:400 italic 9.6pt/1.2 'Noto Serif Display',serif;color:var(--brick)}
 
-  .specs{position:absolute;top:141mm;left:11mm;right:11mm;display:flex;flex-wrap:nowrap;justify-content:center;gap:1.4mm}
+  .specs{position:absolute;top:142.5mm;left:11mm;right:11mm;display:flex;flex-wrap:nowrap;justify-content:center;gap:1.4mm}
   .specs span{white-space:nowrap;padding:1.5mm 2.1mm;border-radius:99px;background:var(--sand);border:.25mm solid rgba(73,16,9,.14);font:800 5.2pt/1 Manrope,sans-serif;letter-spacing:.12em}
 
   .cta{position:absolute;left:0;right:0;bottom:0;height:62mm;padding:9mm 13mm calc(var(--bleed) + 9mm);
     background:radial-gradient(80mm 60mm at 85% 20%, rgba(151,32,16,.6), transparent 70%),var(--oxblood);color:var(--cream);
     display:grid;grid-template-columns:1fr 36mm;column-gap:8mm;align-items:center}
   .cta .kicker{color:var(--gold)}
-  .cta h4{margin-top:2mm;font:400 23pt/1 'Noto Serif Display',serif}
+  .cta h4{margin-top:2mm;font:400 23pt/1.05 'Noto Serif Display',serif}
+  .cta h4 .wm{font-size:20pt;color:var(--rose)}
   .cta h4 em{font-style:italic;font-weight:300;color:var(--rose)}
   .cta .free{margin-top:2.6mm;font:800 6.2pt/1.4 Manrope,sans-serif;letter-spacing:.18em;color:var(--rose)}
   .cta .stand{margin-top:2.8mm;max-width:76mm;font:500 8pt/1.45 Manrope,sans-serif;color:rgba(247,236,228,.86)}
@@ -127,21 +130,28 @@
   <!-- The Λ of the wordmark, drawn as a roof: the professional walks into the client's home -->
   <svg class="roof" viewBox="0 0 154 216" preserveAspectRatio="none" aria-hidden="true">
     <g fill="none" stroke="#C6A664" stroke-linecap="round">
-      <path d="M74 216 L114 30 L170 216" stroke-width=".35" opacity=".9"/>
-      <path d="M84 216 L114 46 L160 216" stroke-width=".18" opacity=".45"/>
+      <path d="M74 216 L114 44 L170 216" stroke-width=".35" opacity=".9"/>
+      <path d="M84 216 L114 56 L160 216" stroke-width=".18" opacity=".45"/>
     </g>
-    <path d="M114 26.2 l2.2 3.8 -2.2 3.8 -2.2 -3.8z" fill="#C6A664"/>
+  </svg>
+  <!-- Seal at the apex of the roof: the "first in Greece" claim -->
+  <svg class="seal" viewBox="0 0 30 30" aria-label="Η πρώτη στην Ελλάδα για ραντεβού κατ’ οίκον">
+    <defs><path id="ring" d="M15 15 m-11.4 0 a11.4 11.4 0 1 1 22.8 0 a11.4 11.4 0 1 1 -22.8 0"/></defs>
+    <circle cx="15" cy="15" r="14.6" fill="#491009"/>
+    <circle cx="15" cy="15" r="14.2" fill="none" stroke="#C6A664" stroke-width=".3"/>
+    <circle cx="15" cy="15" r="9.3" fill="none" stroke="#C6A664" stroke-width=".15"/>
+    <text font-family="Manrope" font-weight="800" font-size="2.05" letter-spacing=".42" fill="#C6A664"><textPath href="#ring" textLength="70.6" lengthAdjust="spacing">Η ΠΡΩΤΗ ΣΤΗΝ ΕΛΛΑΔΑ ◆ ΚΑΤ’ ΟΙΚΟΝ ◆ ΓΙΑ ΕΠΑΓΓΕΛΜΑΤΙΕΣ ◆</textPath></text>
+    <text x="15" y="19.4" text-anchor="middle" font-family="Zenday Wordmark" font-size="12" fill="#F7ECE4">A</text>
   </svg>
 
   <div class="top">
     <div class="wm">Zenday</div>
-    <div class="kicker">Για επαγγελματίες<br>ομορφιάς &amp; ευεξίας</div>
   </div>
 
   <div class="hero">
-    <p class="kicker eyebrow">Nail · Hair · Barber · Make-up · Αισθητική · Μασάζ</p>
+    <p class="kicker eyebrow">Hair stylists · Μασέρ · Αισθητικοί<br>Nail &amp; make-up artists</p>
     <h1>Εσείς<br>είστε το<br><em>σαλόνι.</em></h1>
-    <p class="sub">Οι πελάτες σας βρίσκουν, κλείνουν και <b>πληρώνουν online</b>. Εσείς κάνετε αυτό που αγαπάτε — <b>με τους δικούς σας όρους.</b></p>
+    <p class="sub"><b>Η πρώτη πλατφόρμα online κρατήσεων στην Ελλάδα για περιποιήσεις κατ’ οίκον</b> — φτιαγμένη αποκλειστικά για επαγγελματίες.</p>
   </div>
 
   <div class="notif" aria-label="Παράδειγμα ειδοποίησης νέου ραντεβού">
@@ -154,10 +164,10 @@
     <div class="paid"><svg viewBox="0 0 12 12"><path d="M2.5 6.4 4.9 8.6 9.6 3.6" fill="none" stroke="#972010" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>ΗΔΗ ΠΛΗΡΩΜΕΝΟ</div>
   </div>
 
-  <p class="turn">Γυρίστε σελίδα. <b>Κυριολεκτικά.</b></p>
+  <p class="turn">Η εβδομάδα σας μόλις<br>απέκτησε <b>όγδοη μέρα.</b></p>
 
-  <div class="ticker">
-    <span>ΔΙΚΕΣ ΣΑΣ ΤΙΜΕΣ</span><i>◆</i><span>ΔΙΚΟ ΣΑΣ ΩΡΑΡΙΟ</span><i>◆</i><span>ΠΛΗΡΩΜΕΝΑ ΡΑΝΤΕΒΟΥ</span><i>◆</i><span>ΜΕ Ή ΧΩΡΙΣ ΑΦΜ</span>
+  <div class="week" aria-label="Δευτέρα έως Κυριακή — και Zenday">
+    <span>ΔΕΥ</span><span>ΤΡΙ</span><span>ΤΕΤ</span><span>ΠΕΜ</span><span>ΠΑΡ</span><span>ΣΑΒ</span><span>ΚΥΡ</span><span class="zen">Zenday</span>
   </div>
 </section>
 
@@ -167,17 +177,17 @@
   <div class="head">
     <p class="kicker">Γιατί Zenday</p>
     <h2>Δική σας η τέχνη.<br><em>Δικοί σας οι όροι.</em></h2>
-    <p class="manifesto">Οι μεγάλες πλατφόρμες φτιάχτηκαν για σαλόνια. <b>Το Zenday φτιάχτηκε για εσάς</b> — τον επαγγελματία που πηγαίνει εκεί όπου τον χρειάζονται.</p>
+    <p class="manifesto">Οι μεγάλες πλατφόρμες φτιάχτηκαν για σαλόνια. <b>Το Zenday φτιάχτηκε αποκλειστικά για εσάς</b> — τον επαγγελματία που φέρνει την ομορφιά στην πόρτα του πελάτη.</p>
   </div>
 
   <div class="grid">
     <div class="b">
       <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h3"/><path d="m14.5 14.6 1.6 1.6 3-3.2"/></svg></div>
-      <div><h3>Πληρωμένο, πριν φτάσετε.</h3><p>Ο πελάτης πληρώνει online όταν κλείνει. Χωρίς μετρητά, χωρίς κυνήγι.</p></div>
+      <div><h3>Πληρωμένο, πριν φτάσετε.</h3><p>Οι πελάτες κλείνουν και πληρώνουν online. Χωρίς τηλέφωνα, χωρίς μετρητά.</p></div>
     </div>
     <div class="b">
-      <div class="ic"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="16" rx="2.5"/><path d="M3.5 9.5h17M8 2.8v3.4M16 2.8v3.4"/><path d="m9 14.6 2 2 4-4.2"/></svg></div>
-      <div><h3>Τέλος στα τηλέφωνα.</h3><p>Σας κλείνουν μόνοι τους, στις ώρες που διαλέξατε. Το πρόγραμμα γεμίζει μόνο του.</p></div>
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3.5v17M7.5 20.5h9M5 7h14"/><path d="M5 7 2.6 13a2.6 2.6 0 0 0 4.8 0zM19 7l-2.4 6a2.6 2.6 0 0 0 4.8 0z"/></svg></div>
+      <div><h3>Δίκαιες συμφωνίες.</h3><p>Ξεκάθαροι όροι, καμία δέσμευση. Όταν κερδίζετε εσείς, κερδίζουμε κι εμείς.</p></div>
     </div>
     <div class="b">
       <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2.8 4.5 5.8v5.6c0 4.6 3.1 8.2 7.5 9.8 4.4-1.6 7.5-5.2 7.5-9.8V5.8z"/><path d="m8.8 12 2.2 2.2 4.2-4.4"/></svg></div>
@@ -203,14 +213,14 @@
   </div>
 
   <div class="specs">
-    <span>NAIL ARTIST</span><span>HAIR STYLIST</span><span>BARBER</span><span>MAKE-UP ARTIST</span><span>ΑΙΣΘΗΤΙΚΟΣ</span><span>ΜΑΣΕΡ</span>
+    <span>HAIR STYLIST</span><span>ΜΑΣΕΡ</span><span>ΑΙΣΘΗΤΙΚΟΣ</span><span>NAIL ARTIST</span><span>MAKE-UP ARTIST</span>
   </div>
 
   <div class="cta">
     <div>
       <p class="kicker">Ελάτε μαζί μας</p>
-      <h4>Σκανάρετε.<br><em>Ξεκινήστε.</em></h4>
-      <p class="free">ΔΩΡΕΑΝ ΕΓΓΡΑΦΗ · ΚΑΜΙΑ ΔΕΣΜΕΥΣΗ</p>
+      <h4>Σήμερα<br><em>είναι</em> <span class="wm">Zenday</span>.</h4>
+      <p class="free">ΣΚΑΝΑΡΕΤΕ · ΔΩΡΕΑΝ ΕΓΓΡΑΦΗ · ΚΑΜΙΑ ΔΕΣΜΕΥΣΗ</p>
       <p class="stand"><b>Είστε στο περίπτερό μας;</b> Στήνουμε μαζί το προφίλ σας, εδώ και τώρα.</p>
       <div class="sign"><span class="wm">Zenday</span><span class="url">zenday.gr</span></div>
     </div>
