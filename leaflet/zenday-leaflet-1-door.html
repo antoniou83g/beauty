@@ -129,43 +129,33 @@
   .qr img{display:block;width:100%;height:auto}
   .qr span{display:block;margin-top:2mm;font:800 5.6pt/1 Manrope,sans-serif;letter-spacing:.22em;color:var(--brick)}
 
-  /* ── photo-cover variants ── */
-  .photo{position:absolute;left:0;top:0;width:154mm;overflow:hidden}
-  .photo img{display:block;width:100%;height:100%;object-fit:cover}
-  .photo .tone{position:absolute;inset:0;background:#972010;mix-blend-mode:soft-light;opacity:.55}
-  .photo .fade{position:absolute;inset:0}
-  .front .demand p{max-width:none}
-  .va,.vb,.vc,.vd{background:radial-gradient(110mm 80mm at 12% 100%, rgba(151,32,16,.4), transparent 70%),#491009}
+  /* ── round 3 covers ── */
+  .r3{background:radial-gradient(110mm 80mm at 12% 100%, rgba(151,32,16,.4), transparent 70%),#491009}
+  .r3 .photo{position:absolute;left:0;top:0;width:154mm;overflow:hidden}
+  .r3 .photo img{display:block;width:100%;height:100%;object-fit:cover}
+  .r3 .photo .tone{position:absolute;inset:0;background:#972010;mix-blend-mode:soft-light;opacity:.5}
+  .r3 .photo .fade{position:absolute;inset:0}
+  .r3 .demand p{max-width:none}
+  .r3 h1 small{display:block;margin-top:2.4mm;font:300 italic 17pt/1.1 'Noto Serif Display',serif;color:#F3B7B3}
+  .r3 .sub{max-width:118mm;margin-top:4mm;font-size:8.8pt}
+  .r3 .demand{top:124mm}
+  .r3 .demand h2{font-size:16pt}
+  .r3 .notif.n1{top:139mm}.r3 .notif.n2{top:157mm}.r3 .notif.n3{top:175mm}
 
-  .vc .win{position:absolute;inset:0;width:100%;height:100%}
-  .vc .seal{left:100mm;top:13mm;width:28mm;height:28mm}
-  .vc .hero{top:50mm}
-  .vc h1{font-size:36pt;line-height:1}
-  .vc .sub{position:absolute;top:65mm;left:0;max-width:112mm;margin:0}
-  .vc .demand{top:129mm}
-  .vc .demand h2{font-size:16pt}
-  .vc .notif.n1{top:143mm}.vc .notif.n2{top:161mm}.vc .notif.n3{top:179mm}
+  .v1 .photo{height:104mm}
+  .v1 .photo img{object-position:20% 30%;transform:scaleX(-1);filter:sepia(.35) saturate(.95) contrast(1.05)}
+  .v1 .photo .fade{background:linear-gradient(180deg,rgba(73,16,9,.55) 0,rgba(73,16,9,0) 20mm,rgba(73,16,9,0) 44mm,rgba(73,16,9,.9) 80mm,#491009 102mm),
+                              linear-gradient(270deg,rgba(73,16,9,0) 55%,rgba(73,16,9,.6))}
+  .v1 .seal{left:12mm;top:23mm;width:26mm;height:26mm;filter:drop-shadow(0 1mm 3mm rgba(20,4,2,.5))}
+  .v1 .hero{top:66mm}
+  .v1 h1{font-size:34pt;line-height:.98}
 </style>
 </head>
 <body>
 
-<!-- ════════════════════════ FRONT · C · Λ WINDOW ════════════════════════ -->
-<section class="page front vc" aria-label="Μπροστινή όψη">
-  <!-- the hairdresser seen through the Λ: the roof of the client's home -->
-  <svg class="win" viewBox="0 0 154 216" aria-hidden="true">
-    <defs>
-      <clipPath id="lam"><path d="M114 27 L68 112 L160 112 Z"/></clipPath>
-      <linearGradient id="lamfade" x1="0" y1="0" x2="0" y2="1"><stop offset=".55" stop-color="#491009" stop-opacity="0"/><stop offset="1" stop-color="#491009" stop-opacity=".55"/></linearGradient>
-    </defs>
-    <g clip-path="url(#lam)">
-      <image href="img/hairdresser.jpg" x="-40" y="22" width="235" height="157" preserveAspectRatio="xMidYMid slice"/>
-      <rect x="0" y="27" width="160" height="86" fill="#972010" opacity=".18" style="mix-blend-mode:soft-light"/>
-      <rect x="60" y="27" width="100" height="86" fill="url(#lamfade)"/>
-    </g>
-    <g fill="none" stroke="#C6A664" stroke-linecap="round">
-      <path d="M68 112 L114 27 L160 112" stroke-width=".45"/>
-    </g>
-  </svg>
+<!-- ════════════════════════ FRONT · 1 · DOOR ════════════════════════ -->
+<section class="page front r3 v1" aria-label="Μπροστινή όψη">
+  <div class="photo"><img src="img/welcome.jpg" alt=""><div class="tone"></div><div class="fade"></div></div>
     <!-- Seal at the apex of the roof: the "first in Greece" claim -->
   <svg class="seal" viewBox="0 0 30 30" aria-label="Η πρώτη στην Ελλάδα για ραντεβού κατ’ οίκον">
     <defs><path id="ring" d="M15 15 m-11.4 0 a11.4 11.4 0 1 1 22.8 0 a11.4 11.4 0 1 1 -22.8 0"/></defs>
@@ -177,9 +167,8 @@
   </svg>
   <div class="logo wm">Zenday</div>
   <div class="hero">
-    <p class="kicker eyebrow">Hair stylists · Μασέρ · Αισθητικοί<br>Nail &amp; make-up artists</p>
-    <h1>Εσείς<br>είστε το<br><em>σαλόνι.</em></h1>
-    <p class="sub"><b>Η πρώτη πλατφόρμα online κρατήσεων στην Ελλάδα για περιποιήσεις κατ’&nbsp;οίκον</b> — φτιαγμένη αποκλειστικά για επαγγελματίες.</p>
+    <h1>Ομορφιά &amp; ευεξία<br><em>στο σπίτι.</em></h1>
+    <p class="sub"><b>Εσείς φέρνετε την τέχνη. Εμείς, τους πελάτες.</b><br>Η πρώτη πλατφόρμα στην Ελλάδα για online κρατήσεις κατ’&nbsp;οίκον — αποκλειστικά για επαγγελματίες.</p>
   </div>
   <div class="demand">
     <h2>Σας ψάχνουν <em>ήδη.</em></h2>
@@ -213,7 +202,7 @@
   <div class="head">
     <p class="kicker">Γιατί Zenday</p>
     <h2>Δική σας η τέχνη.<br><em>Δικοί σας οι όροι.</em></h2>
-    <p class="manifesto">Οι μεγάλες πλατφόρμες φτιάχτηκαν για σαλόνια. <b>Το Zenday φτιάχτηκε αποκλειστικά για εσάς</b> — που φέρνετε την ομορφιά στην πόρτα του πελάτη.</p>
+    <p class="manifesto">Οι μεγάλες πλατφόρμες φτιάχτηκαν για κομμωτήρια και κέντρα. <b>Το Zenday φτιάχτηκε αποκλειστικά για εσάς</b> — που φέρνετε ομορφιά &amp; ευεξία στο σπίτι του πελάτη.</p>
   </div>
 
   <div class="grid">

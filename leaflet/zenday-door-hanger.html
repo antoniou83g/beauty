@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zenday Door Hanger</title>
+<!-- Door hanger · 90 × 230 mm trim + 3 mm bleed (96 × 236). Magenta dashed = die-cut line (hole Ø34 mm + slit, rounded corners r4) — put it on its own spot layer, do not print it.
+     Side A hangs on the client's door; side B is the pitch for professionals. -->
+<style>
+  @font-face{font-family:'Manrope';font-weight:200 800;src:url(fonts/manrope-greek.woff2) format('woff2');unicode-range:U+0370-03FF}
+  @font-face{font-family:'Manrope';font-weight:200 800;src:url(fonts/manrope-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'Manrope';font-weight:200 800;src:url(fonts/manrope-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215}
+  @font-face{font-family:'Noto Serif Display';font-weight:100 900;src:url(fonts/noto-serif-display-greek.woff2) format('woff2');unicode-range:U+0370-03FF}
+  @font-face{font-family:'Noto Serif Display';font-weight:100 900;src:url(fonts/noto-serif-display-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+20AC,U+2122}
+  @font-face{font-family:'Noto Serif Display';font-style:italic;font-weight:100 900;src:url(fonts/noto-serif-display-italic-greek.woff2) format('woff2');unicode-range:U+0370-03FF}
+  @font-face{font-family:'Noto Serif Display';font-style:italic;font-weight:100 900;src:url(fonts/noto-serif-display-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+20AC,U+2122}
+  @font-face{font-family:'Zenday Wordmark';font-weight:400;font-display:block;src:url(fonts/zenday-wordmark.woff2) format('woff2')}
+
+  :root{--oxblood:#491009;--brick:#972010;--cream:#F7ECE4;--sand:#F3EBE5;--blush:#FEDADB;--rose:#F3B7B3;--gold:#C6A664}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Manrope,sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact;text-rendering:geometricPrecision}
+  .wm{font-family:'Zenday Wordmark',serif;font-weight:400;letter-spacing:0;white-space:nowrap}
+  .k{font:800 5.6pt/1.3 Manrope,sans-serif;letter-spacing:.24em;text-transform:uppercase}
+  em{font-style:italic;font-weight:300}
+
+  @page{size:96mm 236mm;margin:0}
+  html,body{background:#2a2a2a}
+  .hg{margin:0 auto 10mm;break-after:page}
+  .hg:last-child{margin-bottom:0}
+  .page{display:block}
+  @media print{html,body{background:none}.hg{margin:0}}
+
+  .hg{position:relative;width:96mm;height:236mm;overflow:hidden}
+  .hg .die{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  .hg.a{background:radial-gradient(70mm 90mm at 70% 70%,rgba(151,32,16,.55),transparent 70%),var(--oxblood);color:var(--cream)}
+  .hg.a .roof{position:absolute;inset:0;width:100%;height:100%}
+  .hg.a .txt{position:absolute;left:11mm;right:11mm;top:78mm}
+  .hg.a .k{color:var(--gold)}
+  .hg.a h1{margin-top:5mm;font:400 38pt/.95 'Noto Serif Display',serif}
+  .hg.a h2{margin-top:6mm;font:300 italic 19pt/1.12 'Noto Serif Display',serif;color:var(--rose)}
+  .hg.a .shh{margin-top:8mm;font:500 8pt/1.5 Manrope,sans-serif;color:rgba(247,236,228,.75)}
+  .hg.a .foot{position:absolute;left:11mm;right:11mm;bottom:13mm;display:flex;justify-content:space-between;align-items:flex-end;border-top:.25mm solid rgba(198,166,100,.5);padding-top:4mm}
+  .hg.a .foot .wm{font-size:12pt}
+  .hg.a .foot span:not(.wm){font:600 6pt/1.3 Manrope,sans-serif;letter-spacing:.1em;color:rgba(247,236,228,.7);text-align:right}
+  .hg.b{background:var(--cream);color:var(--oxblood)}
+  .hg.b .txt{position:absolute;left:11mm;right:11mm;top:62mm}
+  .hg.b .k{color:var(--brick)}
+  .hg.b h1{margin-top:3mm;font:400 22pt/1.02 'Noto Serif Display',serif}
+  .hg.b h1 em{color:var(--brick)}
+  .hg.b .lead{margin-top:3.5mm;font:500 7.6pt/1.45 Manrope,sans-serif;color:rgba(73,16,9,.8)}
+  .hg.b ul{list-style:none;margin-top:5mm;display:grid;gap:2.2mm}
+  .hg.b li{display:flex;gap:2.4mm;align-items:center;font:600 7.8pt/1.2 Manrope,sans-serif}
+  .hg.b li i{flex:none;width:4.6mm;height:4.6mm;border-radius:50%;background:var(--blush);display:grid;place-items:center;font-style:normal;color:var(--brick);font-size:6pt}
+  .hg.b .cta{position:absolute;left:0;right:0;bottom:0;height:70mm;padding:8mm 11mm 11mm;background:var(--oxblood);color:var(--cream);display:grid;grid-template-columns:1fr 30mm;gap:5mm;align-items:center}
+  .hg.b .cta h3{font:400 17pt/1.05 'Noto Serif Display',serif}
+  .hg.b .cta h3 em{color:var(--rose)}
+  .hg.b .cta p{margin-top:2.4mm;font:800 5.4pt/1.5 Manrope,sans-serif;letter-spacing:.16em;color:var(--rose)}
+  .hg.b .cta .wm{display:block;margin-top:4mm;font-size:10pt}
+  .hg.b .qr{background:var(--cream);border-radius:2.6mm;padding:2.4mm}
+  .hg.b .qr img{display:block;width:100%}
+
+</style></head><body>
+<div class="page"><div class="hg a">
+  
+  <svg class="roof" viewBox="0 0 96 236" aria-hidden="true"><path d="M16 72 L48 58 L80 72" fill="none" stroke="#C6A664" stroke-width=".35" opacity=".9"/><path d="M48 55.6 l1.4 2.4 -1.4 2.4 -1.4 -2.4z" fill="#C6A664"/></svg>
+  <div class="txt">
+    <p class="k">Σσσ… ραντεβού σε εξέλιξη</p>
+    <h1>Μην<br>ενοχλείτε.</h1>
+    <h2>Ομορφιά &amp; ευεξία<br>σε εξέλιξη.</h2>
+    <p class="shh">Μέσα, κάποιος κάνει χρόνο για τον εαυτό του.<br>Θα τα πούμε σε λίγο.</p>
+  </div>
+  <div class="foot"><span class="wm">Zenday</span><span>ΟΜΟΡΦΙΑ &amp; ΕΥΕΞΙΑ<br>ΣΤΟ ΣΠΙΤΙ · ZENDAY.GR</span></div>
+  <svg class="die" viewBox="0 0 96 236" aria-hidden="true"><g fill="none" stroke="#e5007e" stroke-width=".3" stroke-dasharray="1.4 1"><circle cx="48" cy="33" r="17"/><path d="M48 16 V3"/><rect x="3" y="3" width="90" height="230" rx="4"/></g></svg>
+</div></div>
+<div class="page"><div class="hg b">
+  
+  <div class="txt">
+    <p class="k">Για επαγγελματίες</p>
+    <h1>Κρεμάστε το<br><em>στην επόμενη πόρτα.</em></h1>
+    <p class="lead">Η πρώτη πλατφόρμα στην Ελλάδα για online κρατήσεις κατ’&nbsp;οίκον — αποκλειστικά για επαγγελματίες ομορφιάς &amp; ευεξίας.</p>
+    <ul>
+      <li><i>✓</i>Ραντεβού ήδη πληρωμένα</li>
+      <li><i>✓</i>Δικές σας τιμές, ώρες &amp; περιοχές</li>
+      <li><i>✓</i>Με ή χωρίς επαγγελματικό ΑΦΜ</li>
+      <li><i>✓</i>Δίκαιες συμφωνίες, καμία δέσμευση</li>
+    </ul>
+  </div>
+  <div class="cta">
+    <div><h3>Σήμερα<br><em>είναι Zenday.</em></h3><p>ΣΚΑΝΑΡΕΤΕ · ΔΩΡΕΑΝ ΕΓΓΡΑΦΗ</p><span class="wm">Zenday</span></div>
+    <div class="qr"><img src="qr-hanger.svg" alt="QR εγγραφής"></div>
+  </div>
+  <svg class="die" viewBox="0 0 96 236" aria-hidden="true"><g fill="none" stroke="#e5007e" stroke-width=".3" stroke-dasharray="1.4 1"><circle cx="48" cy="33" r="17"/><path d="M48 16 V3"/><rect x="3" y="3" width="90" height="230" rx="4"/></g></svg>
+</div></div>
+</body></html>

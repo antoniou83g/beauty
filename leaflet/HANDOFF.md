@@ -4,36 +4,37 @@
 **Format:** A5 portrait, 148 × 210 mm, double-sided, full colour. Files include **3 mm bleed** (154 × 216 mm).
 **Files:** `export/zenday-leaflet-A5-print-bleed3mm.pdf` (print proof), `export/*.png` (trimmed previews), `zenday-leaflet.html` (editable source — open in Chrome).
 
-## The idea
-Treatwell and Fresha sell to **salons**. Zenday is for the **independent professional who goes to the client**.
-So the line is: **«Εσείς είστε το σαλόνι.»** — *you* are the salon.
-The **Λ** of the Zenday wordmark is redrawn as a gold **roof** on the front: the pro walks into the client's home.
-**Claim:** the gold seal at the roof's apex — «Η πρώτη στην Ελλάδα · κατ’ οίκον · για επαγγελματίες» — repeated in plain words under the headline.
-**Demand — «Σας ψάχνουν ήδη.» ("They're already looking for you"):** three cascading booking notifications, each already paid — an urgent same-day blow-dry, a Saturday wedding at home, a Sunday massage for someone who'd rather stay zen at home. The pro sees the work waiting for them.
-**Back:** why Zenday (6 short benefits) → **how to start in 1-2-3** on a blush band → CTA «Σήμερα είναι Zenday» ("Today is Zenday" — Zenday as a day of the week, and the reason to sign up at the stand, today).
+## The idea — «Ομορφιά & ευεξία στο σπίτι»
+Treatwell and Fresha were built for **shops** (hair salons, beauty centres). Zenday is for the **independent professional who brings beauty & wellness into the client's home**.
+- **Brand line:** «Ομορφιά & ευεξία στο σπίτι.»
+- **Promise to the pro:** «Εσείς φέρνετε την τέχνη. Εμείς, τους πελάτες.»
+- **Claim:** gold seal «Η πρώτη στην Ελλάδα · κατ’ οίκον · για επαγγελματίες», repeated in plain words under the headline.
+- **Demand:** «Σας ψάχνουν ήδη.» + three already-paid booking notifications (urgent same-day, Saturday wedding at home, Sunday massage for someone who'd rather stay zen at home).
+- **Back:** why Zenday (6 benefits) → how to start in 1-2-3 → CTA «Σήμερα είναι Zenday».
+- The **Λ** of the wordmark doubles as the roof of the client's home.
+- Copy rules: no numbers, percentages or fees (those live in the contract); competitors never named.
 
-Copy rules kept on purpose: no numbers, percentages or fees (those live in the contract). Competitors are never named — "the big platforms were made for salons".
+## Cover options (the back is the same for all) — side by side in `export/cover-options-1-2-3-4.jpg`
+- **1 · Door** (`zenday-leaflet-1-door.html` = current `zenday-leaflet.html`): «Ομορφιά & ευεξία στο σπίτι.» over a smiling woman at a front door (photo mirrored, warm-toned).
+- **2 · Sofa:** «Σας κλείνουν από τον καναπέ. *Εσείς χτυπάτε το κουδούνι.*» over a client booking from her sofa.
+- **3 · Ding-dong:** «Ντιν-ντον. *Ομορφιά & ευεξία στο σπίτι.*» doorbell duotoned oxblood/rose, gold rings.
+- **4 · Λ window:** «Η τέχνη σας, *στο σπίτι τους.*» the hairdresser at work inside the Λ.
 
-## Cover options with photography (`zenday-leaflet-A…D.html`, previews in `export/`, side by side in `export/cover-options-A-B-C-D.jpg`)
-The back is identical in all of them.
-- **A · Portrait:** the smiling hairdresser from zenday.gr, full bleed on the top half, toned warm and faded into oxblood; seal on the photo's lower edge.
-- **B · Briefcase:** layout ready, **photo slot** for a woman's hand holding her work case at the client's door (waist-down crop, warm daylight, hand on the right, door/threshold visible). Drop the photo in the slot (full bleed, 154 × 106 mm, ≥ 300 dpi ≈ 1820 × 1250 px) and remove the dashed frame.
-- **C · Λ window (recommended):** the hairdresser seen through the Λ of the logo — the roof of the client's home — outlined in gold, seal at the apex. Most ownable, most "brand".
-- **D · Five crafts:** five slices, one per specialty, taken from the zenday.gr homepage film; wordmark on the strip's fade.
+## The door, as a concept (`zenday-concepts-board.html` → `export/zenday-concepts-board.png`)
+1. **Door hanger** (`zenday-door-hanger.html`, print PDF in `export/`): 90 × 230 mm + 3 mm bleed, hole Ø34 mm + slit, r4 corners — the magenta dashed line is the **die-cut**, put it on its own spot layer, never print it.
+   Side A, for the client's door: «Μην ενοχλείτε. *Ομορφιά & ευεξία σε εξέλιξη.*» · Side B, for the pro: «Κρεμάστε το *στην επόμενη πόρτα.*» + QR (`qr-hanger.svg`, tagged `utm_medium=door_hanger`).
+   Suggested stock: 350–400 g uncoated or soft-touch, so it survives door handles.
+2. **Key tag:** «Το κλειδί *για νέους πελάτες.*» — 46 × 96 mm fob with hole, QR on the back. Lives on the pro's keyring.
+3. **Thank-you card** (85 × 55): «Ευχαριστώ που μου *ανοίξατε την πόρτα.*» / back «Την επόμενη φορά, *κλείστε με στο Zenday.*» + client QR (`qr-client.svg`). The pro signs it and leaves it — repeat bookings for them, new users for Zenday.
+4. **The stand is a door:** «Ντιν-ντον. *Περάστε.*» — a front-door entrance with the gold Λ roof, a «Καλώς ήρθατε» doormat and a real doorbell.
 
-### Round 2 (`zenday-leaflet-E…H.html`, side by side in `export/cover-options-E-F-G-H.jpg`)
-- **E · «Το σαλόνι σας χωράει σε μια βαλίτσα.»** — a hand carrying a leather work case, right column, faded into oxblood.
-- **F · «Ντιν-ντον. Το σαλόνι έφτασε.»** — a doorbell, duotoned oxblood/rose, with gold "ring" circles radiating from the button.
-- **G · Λ window, action crop** — same as C, re-cropped so the blow-dry, the client and the smile are all visible.
-- **H · «Πίσω από κάθε πόρτα, ένα σαλόνι.»** — a front door inside an arch with a gold edge.
-
-**Image sources & rights**
-- `img/briefcase.jpg` — StockSnap "Brown Leather" by Clem Onojeghuo, CC0 (public domain, no credit needed). Original 3333 × 5000: https://stocksnap.io/photo/brown-leather-9YGBJUD1FY — the file here is the 960 px preview, **download the original for print**.
+## Image sources & rights
+- `img/welcome.jpg` — StockSnap "Woman Portrait", CC0 (public domain, no credit needed). Original 3456 × 2304: https://stocksnap.io/photo/HV6O4C5CZA — 960 px preview here, **download the original for print**.
+- `img/sofa.jpg` — StockSnap "Woman Mobile", CC0. Original 7680 × 5120: https://stocksnap.io/photo/Q93BUD2Z3Z — preview here; keep the shopping bag (bottom left) cropped out.
 - `img/doorbell.jpg` — StockSnap "Wood Door", CC0. Original 5616 × 3744: https://stocksnap.io/photo/F2CDF3B476 — preview here, download the original.
-- `img/door.jpg` — StockSnap "House Doorstep", CC0. Original 2719 × 4079: https://stocksnap.io/photo/VILLZJY1XX — preview here; the door has French lettering above the crop, keep it cropped out or retouch.
-- `img/hairdresser.jpg` — Unsplash photo `photo-1562322140-8baeececf3df` (already used on zenday.gr), Unsplash License: free for commercial use incl. print, no attribution required. Downloaded at 3000 px.
-- `img/hair|massage|facial|nails|makeup.jpg` — frames from `zenday.gr/…/mgo-hero-v1.mp4` (1440 × 1080). Fine for the narrow slices in D; for a larger use, get the original clip or stills.
-- Note: the hairdresser photo was shot in a salon. For a brand that says "you are the salon", a photo taken in a client's home is even stronger — worth one half-day shoot with a real Zenday pro (the briefcase shot for B, plus a smiling pro at a client's door).
+- `img/hairdresser.jpg` — Unsplash `photo-1562322140-8baeececf3df` (already on zenday.gr), Unsplash License: free commercial use incl. print. 3000 px.
+- `img/hair|massage|facial|nails|makeup.jpg` — frames from the zenday.gr homepage film (1440 × 1080).
+- The ideal hero — a smiling Zenday pro greeted by a client at the door — doesn't exist as free stock. One half-day shoot with a real pro (door greeting, hand on the work case, the door hanger on a real door) would give the campaign its own images.
 
 ## Colour (from zenday.gr)
 | Role | HEX | Suggested CMYK (check against your printer's profile) |

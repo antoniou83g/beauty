@@ -128,20 +128,35 @@
   .qr{background:var(--cream);border-radius:3.4mm;padding:3.2mm 3.2mm 2.4mm;text-align:center}
   .qr img{display:block;width:100%;height:auto}
   .qr span{display:block;margin-top:2mm;font:800 5.6pt/1 Manrope,sans-serif;letter-spacing:.22em;color:var(--brick)}
+
+  /* ── round 3 covers ── */
+  .r3{background:radial-gradient(110mm 80mm at 12% 100%, rgba(151,32,16,.4), transparent 70%),#491009}
+  .r3 .photo{position:absolute;left:0;top:0;width:154mm;overflow:hidden}
+  .r3 .photo img{display:block;width:100%;height:100%;object-fit:cover}
+  .r3 .photo .tone{position:absolute;inset:0;background:#972010;mix-blend-mode:soft-light;opacity:.5}
+  .r3 .photo .fade{position:absolute;inset:0}
+  .r3 .demand p{max-width:none}
+  .r3 h1 small{display:block;margin-top:2.4mm;font:300 italic 17pt/1.1 'Noto Serif Display',serif;color:#F3B7B3}
+  .r3 .sub{max-width:118mm;margin-top:4mm;font-size:8.8pt}
+  .r3 .demand{top:124mm}
+  .r3 .demand h2{font-size:16pt}
+  .r3 .notif.n1{top:139mm}.r3 .notif.n2{top:157mm}.r3 .notif.n3{top:175mm}
+
+  .v1 .photo{height:104mm}
+  .v1 .photo img{object-position:20% 30%;transform:scaleX(-1);filter:sepia(.35) saturate(.95) contrast(1.05)}
+  .v1 .photo .fade{background:linear-gradient(180deg,rgba(73,16,9,.55) 0,rgba(73,16,9,0) 20mm,rgba(73,16,9,0) 44mm,rgba(73,16,9,.9) 80mm,#491009 102mm),
+                              linear-gradient(270deg,rgba(73,16,9,0) 55%,rgba(73,16,9,.6))}
+  .v1 .seal{left:12mm;top:23mm;width:26mm;height:26mm;filter:drop-shadow(0 1mm 3mm rgba(20,4,2,.5))}
+  .v1 .hero{top:66mm}
+  .v1 h1{font-size:34pt;line-height:.98}
 </style>
 </head>
 <body>
 
-<!-- ════════════════════════ FRONT ════════════════════════ -->
-<section class="page front" aria-label="Μπροστινή όψη">
-  <!-- The Λ of the wordmark, drawn as a roof: the professional walks into the client's home -->
-  <svg class="roof" viewBox="0 0 154 216" preserveAspectRatio="none" aria-hidden="true">
-    <g fill="none" stroke="#C6A664" stroke-linecap="round">
-      <path d="M74 216 L114 44 L170 216" stroke-width=".35" opacity=".9"/>
-      <path d="M84 216 L114 56 L160 216" stroke-width=".18" opacity=".45"/>
-    </g>
-  </svg>
-  <!-- Seal at the apex of the roof: the "first in Greece" claim -->
+<!-- ════════════════════════ FRONT · 1 · DOOR ════════════════════════ -->
+<section class="page front r3 v1" aria-label="Μπροστινή όψη">
+  <div class="photo"><img src="img/welcome.jpg" alt=""><div class="tone"></div><div class="fade"></div></div>
+    <!-- Seal at the apex of the roof: the "first in Greece" claim -->
   <svg class="seal" viewBox="0 0 30 30" aria-label="Η πρώτη στην Ελλάδα για ραντεβού κατ’ οίκον">
     <defs><path id="ring" d="M15 15 m-11.4 0 a11.4 11.4 0 1 1 22.8 0 a11.4 11.4 0 1 1 -22.8 0"/></defs>
     <circle cx="15" cy="15" r="14.6" fill="#491009"/>
@@ -150,18 +165,14 @@
     <text font-family="Manrope" font-weight="800" font-size="2.05" letter-spacing=".42" fill="#C6A664"><textPath href="#ring" textLength="70.6" lengthAdjust="spacing">Η ΠΡΩΤΗ ΣΤΗΝ ΕΛΛΑΔΑ ◆ ΚΑΤ’ ΟΙΚΟΝ ◆ ΓΙΑ ΕΠΑΓΓΕΛΜΑΤΙΕΣ ◆</textPath></text>
     <text x="15" y="19.4" text-anchor="middle" font-family="Zenday Wordmark" font-size="12" fill="#F7ECE4">A</text>
   </svg>
-
   <div class="logo wm">Zenday</div>
-
   <div class="hero">
-    <p class="kicker eyebrow">Hair stylists · Μασέρ · Αισθητικοί<br>Nail &amp; make-up artists</p>
-    <h1>Εσείς είστε<br><em>το σαλόνι.</em></h1>
-    <p class="sub"><b>Η πρώτη πλατφόρμα online κρατήσεων στην Ελλάδα για περιποιήσεις κατ’&nbsp;οίκον</b> — φτιαγμένη αποκλειστικά για επαγγελματίες.</p>
+    <h1>Ομορφιά &amp; ευεξία<br><em>στο σπίτι.</em></h1>
+    <p class="sub"><b>Εσείς φέρνετε την τέχνη. Εμείς, τους πελάτες.</b><br>Η πρώτη πλατφόρμα στην Ελλάδα για online κρατήσεις κατ’&nbsp;οίκον — αποκλειστικά για επαγγελματίες.</p>
   </div>
-
   <div class="demand">
     <h2>Σας ψάχνουν <em>ήδη.</em></h2>
-    <p>Πελάτες που θέλουν την περιποίηση στον δικό τους χώρο, στη δική τους ώρα — και πληρώνουν πριν φτάσετε.</p>
+    <p>Στον δικό τους χώρο, στη δική τους ώρα — και πληρωμένοι πριν φτάσετε.</p>
   </div>
 
   <div class="notif n1">
@@ -191,7 +202,7 @@
   <div class="head">
     <p class="kicker">Γιατί Zenday</p>
     <h2>Δική σας η τέχνη.<br><em>Δικοί σας οι όροι.</em></h2>
-    <p class="manifesto">Οι μεγάλες πλατφόρμες φτιάχτηκαν για σαλόνια. <b>Το Zenday φτιάχτηκε αποκλειστικά για εσάς</b> — που φέρνετε την ομορφιά στην πόρτα του πελάτη.</p>
+    <p class="manifesto">Οι μεγάλες πλατφόρμες φτιάχτηκαν για κομμωτήρια και κέντρα. <b>Το Zenday φτιάχτηκε αποκλειστικά για εσάς</b> — που φέρνετε ομορφιά &amp; ευεξία στο σπίτι του πελάτη.</p>
   </div>
 
   <div class="grid">
