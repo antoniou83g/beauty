@@ -1,0 +1,33 @@
+Fonts in this folder
+====================
+
+Manrope — manrope-greek.woff2, manrope-latin.woff2, manrope-latin-ext.woff2 (weights 200–800)
+  Copyright 2019 The Manrope Project Authors (https://github.com/sharanda/manrope)
+
+Noto Serif Display — noto-serif-display-greek.woff2, noto-serif-display-latin.woff2,
+  noto-serif-display-italic-greek.woff2, noto-serif-display-italic-latin.woff2 (weights 100–900)
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+Playfair Display — playfair-display-latin.woff2 (weights 400–900)
+  Copyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display),
+  with Reserved Font Name "Playfair Display".
+
+Zenday Wordmark — zenday-wordmark.woff2 (one weight; the letters Z, E, N, D, A, Y only)
+  The logotype of the platform, made on 4 October 2026 from Noto Serif Display (weight 300): the capitals
+  Z, E, N, D, Y and the Greek capital lambda in the place of the A, with slightly stronger hairlines and the
+  spacing of the logotype built in. A modified version of Noto Serif Display under a name of its own.
+  Copyright 2016 Google Inc. All Rights Reserved. Licensed, like the original, under the SIL Open Font License 1.1.
+
+The copyright lines above are the ones stored inside the files themselves.
+
+Licence
+-------
+All the families are licensed under the SIL Open Font License, Version 1.1.
+The licence with its FAQ: https://openfontlicense.org  (the address stored in the files: http://scripts.sil.org/OFL)
+
+Source
+------
+Google Fonts — the files that fonts.gstatic.com serves for these families, downloaded on
+2 October 2026 and stored here unchanged, so that the platform's pages do not contact Google.
+Those files are not modified; if they ever are, the reserved font name above may no longer be used
+for the modified version. The wordmark font is the only derived file and carries its own name.
