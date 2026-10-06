@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zenday Stand Entrance</title>
+<!-- Stand concept · the entrance is a front door: gold Λ roof, real doorbell, «Καλώς ήρθατε» doormat. Visual for the stand builder, not a print file. -->
+<style>
+  @font-face{font-family:'Manrope';font-weight:200 800;src:url(fonts/manrope-greek.woff2) format('woff2');unicode-range:U+0370-03FF}
+  @font-face{font-family:'Manrope';font-weight:200 800;src:url(fonts/manrope-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'Manrope';font-weight:200 800;src:url(fonts/manrope-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215}
+  @font-face{font-family:'Noto Serif Display';font-weight:100 900;src:url(fonts/noto-serif-display-greek.woff2) format('woff2');unicode-range:U+0370-03FF}
+  @font-face{font-family:'Noto Serif Display';font-weight:100 900;src:url(fonts/noto-serif-display-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+20AC,U+2122}
+  @font-face{font-family:'Noto Serif Display';font-style:italic;font-weight:100 900;src:url(fonts/noto-serif-display-italic-greek.woff2) format('woff2');unicode-range:U+0370-03FF}
+  @font-face{font-family:'Noto Serif Display';font-style:italic;font-weight:100 900;src:url(fonts/noto-serif-display-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+20AC,U+2122}
+  @font-face{font-family:'Zenday Wordmark';font-weight:400;font-display:block;src:url(fonts/zenday-wordmark.woff2) format('woff2')}
+
+  :root{--oxblood:#491009;--brick:#972010;--cream:#F7ECE4;--sand:#F3EBE5;--blush:#FEDADB;--rose:#F3B7B3;--gold:#C6A664}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#2a2a2a}
+  body{font-family:Manrope,sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact;text-rendering:geometricPrecision}
+  .wm{font-family:'Zenday Wordmark',serif;font-weight:400;letter-spacing:0;white-space:nowrap}
+  .k{font:800 5.6pt/1.3 Manrope,sans-serif;letter-spacing:.24em;text-transform:uppercase}
+  em{font-style:italic;font-weight:300}
+  .page{position:relative;overflow:hidden;margin:0 auto 10mm;break-after:page}
+  .page:last-child{margin-bottom:0}
+  .die{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  @media print{html,body{background:none}.page{margin:0}}
+
+  @page{size:297mm 210mm;margin:0}
+  .page{width:297mm;height:210mm}
+
+  .st{background:linear-gradient(#f6eee8 0,#efe4dc 68%,#d9cbbf 68%,#cdbdb0 100%)}
+  .st svg{position:absolute;inset:0;width:100%;height:100%}
+  .st .cap{position:absolute;left:26mm;bottom:9mm;width:150mm;color:var(--oxblood)}
+  .st .cap .k{color:var(--brick)}
+  .st .cap h2{margin-top:1.6mm;font:400 18pt/1.05 'Noto Serif Display',serif}
+  .st .cap h2 em{color:var(--brick)}
+  .st .cap p{margin-top:1.6mm;font:500 8pt/1.45 Manrope,sans-serif;color:rgba(73,16,9,.8)}
+
+</style></head><body>
+<section class="page st" aria-label="Περίπτερο">
+  <svg viewBox="0 0 297 210" aria-hidden="true">
+    <!-- side walls -->
+    <rect x="26" y="40" width="76" height="103" fill="#491009"/><rect x="198" y="40" width="76" height="103" fill="#491009"/>
+    <text x="64" y="78" text-anchor="middle" font-family="Noto Serif Display" font-size="7.6" fill="#F7ECE4">Ομορφιά &amp; ευεξία</text>
+    <text x="64" y="89" text-anchor="middle" font-family="Noto Serif Display" font-style="italic" font-weight="300" font-size="7.6" fill="#F3B7B3">στο σπίτι.</text>
+    <text x="236" y="78" text-anchor="middle" font-family="Noto Serif Display" font-size="7.6" fill="#F7ECE4">Every day</text>
+    <text x="236" y="89" text-anchor="middle" font-family="Noto Serif Display" font-style="italic" font-weight="300" font-size="7.6" fill="#F3B7B3">is <tspan font-family="Zenday Wordmark" font-style="normal" font-size="6.6" fill="#F7ECE4">Zenday</tspan>.</text>
+    <!-- the door -->
+    <path d="M108 52 L150 18 L192 52" fill="none" stroke="#C6A664" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M150 11 l3 5 -3 5 -3 -5z" fill="#C6A664"/>
+    <rect x="118" y="52" width="64" height="91" fill="#5e1a10"/>
+    <rect x="122" y="56" width="56" height="87" fill="#6d2214" stroke="#C6A664" stroke-width=".6"/>
+    <rect x="127" y="62" width="46" height="34" fill="none" stroke="#C6A664" stroke-width=".35" opacity=".7"/>
+    <rect x="127" y="101" width="46" height="36" fill="none" stroke="#C6A664" stroke-width=".35" opacity=".7"/>
+    <text x="150" y="83" text-anchor="middle" font-family="Zenday Wordmark" font-size="8.5" fill="#F7ECE4">Zenday</text>
+    <text x="150" y="122" text-anchor="middle" font-family="Noto Serif Display" font-style="italic" font-weight="300" font-size="7" fill="#F3B7B3">Περάστε.</text>
+    <circle cx="173" cy="100" r="1.8" fill="#C6A664"/>
+    <!-- the doorbell -->
+    <g transform="translate(188 98)"><circle r="3" fill="#C6A664"/><circle r="6" fill="none" stroke="#C6A664" stroke-width=".4"/><circle r="9.5" fill="none" stroke="#C6A664" stroke-width=".3" opacity=".6"/><circle r="13.5" fill="none" stroke="#C6A664" stroke-width=".2" opacity=".35"/></g>
+    <text x="188" y="117" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="1.9" letter-spacing=".5" fill="#491009">ΝΤΙΝ-ΝΤΟΝ</text>
+    <!-- doormat -->
+    <path d="M118 150 h64 l8 14 h-80z" fill="#972010"/>
+    <text x="150" y="159.4" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="4.2" letter-spacing="1" fill="#F7ECE4">ΚΑΛΩΣ ΗΡΘΑΤΕ</text>
+  </svg>
+  <div class="cap">
+    <p class="k">Το περίπτερο είναι μια πόρτα</p>
+    <h2>Ντιν-ντον. <em>Περάστε.</em></h2>
+    <p>Οι άλλοι έχουν πάγκους — εμείς έχουμε εξώπορτα. Στέγη-Λ σε χρυσό, χαλάκι «Καλώς ήρθατε» και αληθινό κουδούνι: ο επισκέπτης χτυπάει, του ανοίγουμε, και ο ήχος ακούγεται σε όλη την έκθεση.</p>
+  </div>
+</section>
+</body></html>
