@@ -21,7 +21,16 @@ The back is identical in all of them.
 - **C · Λ window (recommended):** the hairdresser seen through the Λ of the logo — the roof of the client's home — outlined in gold, seal at the apex. Most ownable, most "brand".
 - **D · Five crafts:** five slices, one per specialty, taken from the zenday.gr homepage film; wordmark on the strip's fade.
 
+### Round 2 (`zenday-leaflet-E…H.html`, side by side in `export/cover-options-E-F-G-H.jpg`)
+- **E · «Το σαλόνι σας χωράει σε μια βαλίτσα.»** — a hand carrying a leather work case, right column, faded into oxblood.
+- **F · «Ντιν-ντον. Το σαλόνι έφτασε.»** — a doorbell, duotoned oxblood/rose, with gold "ring" circles radiating from the button.
+- **G · Λ window, action crop** — same as C, re-cropped so the blow-dry, the client and the smile are all visible.
+- **H · «Πίσω από κάθε πόρτα, ένα σαλόνι.»** — a front door inside an arch with a gold edge.
+
 **Image sources & rights**
+- `img/briefcase.jpg` — StockSnap "Brown Leather" by Clem Onojeghuo, CC0 (public domain, no credit needed). Original 3333 × 5000: https://stocksnap.io/photo/brown-leather-9YGBJUD1FY — the file here is the 960 px preview, **download the original for print**.
+- `img/doorbell.jpg` — StockSnap "Wood Door", CC0. Original 5616 × 3744: https://stocksnap.io/photo/F2CDF3B476 — preview here, download the original.
+- `img/door.jpg` — StockSnap "House Doorstep", CC0. Original 2719 × 4079: https://stocksnap.io/photo/VILLZJY1XX — preview here; the door has French lettering above the crop, keep it cropped out or retouch.
 - `img/hairdresser.jpg` — Unsplash photo `photo-1562322140-8baeececf3df` (already used on zenday.gr), Unsplash License: free for commercial use incl. print, no attribution required. Downloaded at 3000 px.
 - `img/hair|massage|facial|nails|makeup.jpg` — frames from `zenday.gr/…/mgo-hero-v1.mp4` (1440 × 1080). Fine for the narrow slices in D; for a larger use, get the original clip or stills.
 - Note: the hairdresser photo was shot in a salon. For a brand that says "you are the salon", a photo taken in a client's home is even stronger — worth one half-day shoot with a real Zenday pro (the briefcase shot for B, plus a smiling pro at a client's door).
